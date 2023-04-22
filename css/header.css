@@ -69,6 +69,8 @@ header {
 .hamburger-menu::after {
   content: "x";
 
+  cursor: pointer;
+
   position: absolute;
 
   top: 1.5rem;
