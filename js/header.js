@@ -1,24 +1,22 @@
-const sections = Array.from(document.getElementsByTagName("section"));
-const links = Array.from(document.getElementById("nav-links"));
+const sections = document.querySelectorAll("section[id]");
 
-document.addEventListener("scroll", () => {
-    sections.forEach((section, index) => {
-        const isVisible = isInViewPort(section);
-        links.forEach((link) => link)
-        if (isVisible)
-            links[index].classList.add("nav-link-active");
+window.addEventListener("scroll", () => {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute("id");
+
+        if (
+            scrollY > sectionTop &&
+            scrollY <= sectionTop + sectionHeight
+        ) {
+            document.querySelector("nav a[href*=" + sectionId + "]").classList.add("nav-link-active");
+        } else {
+            document.querySelector("nav a[href*=" + sectionId + "]").classList.remove("nav-link-active");
+        }
     });
-
 });
-
-const isInViewPort = (element) => {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
 
 export default "header";

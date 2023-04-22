@@ -67,3 +67,16 @@ section {
 
   color: var(--color-black);
 }
+
+.cta {
+  transition: 125ms ease-in-out;
+  cursor: pointer;
+}
+
+.cta:hover {
+  filter: brightness(50%);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}

@@ -1,4 +1,4 @@
-let product_quantity = 1;
+import { addToCart } from "./cart.js";
 
 const add = document.getElementById("product-quantity-add");
 const remove = document.getElementById("product-quantity-remove");
@@ -20,5 +20,11 @@ remove.addEventListener("click", () => {
 
     quantity.innerHTML = value;
 });
+
+const purchace = document.getElementById("product-cta");
+
+purchace.addEventListener("click", () => {
+    addToCart("ID-1", parseInt(quantity.innerText))
+})
 
 export default "product";

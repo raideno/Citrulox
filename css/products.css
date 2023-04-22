@@ -101,6 +101,7 @@
 .product-quantity-add {
   color: var(--color-main);
   fill: var(--color-main);
+  cursor: pointer;
 }
 
 .product-price {
@@ -128,4 +129,6 @@
   line-height: 24px;
 
   color: var(--color-white);
+
+  cursor: pointer;
 }

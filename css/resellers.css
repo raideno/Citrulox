@@ -70,7 +70,7 @@
   gap: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -80,4 +80,11 @@
   display: flex;
   color: var(--color-white);
   fill: var(--color-white);
+}
+
+/*svg inversion*/
+.reseller div img,
+.resellers-header-right img,
+.resellers-header-arrow img {
+  filter: invert(100%);
 }

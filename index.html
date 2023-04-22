@@ -27,7 +27,9 @@
 
 <body>
   <div id="notifications">
-    <div class="notification">Notification !</div>
+    <!--
+      <div class="notification">Notification !</div>
+    -->
   </div>
 
   <div id="hamburger-menu" class="hamburger-menu">
@@ -52,7 +54,10 @@
     <div class="header-title">Citrulox</div>
     <div class="header-right">
       <img id="theme" src="./assets/icons/Solid/General/Moon.svg" alt="moon-icon" />
-      <img id="cart" src="./assets/icons/Solid/General/Shopping-cart.svg" alt="shopping-cart-icon" />
+      <div class="cart" id="cart">
+        <div id="cart-value" class="cart-value"></div>
+        <img id="cart-icon" src="./assets/icons/Solid/General/Shopping-cart.svg" alt="shopping-cart-icon" />
+      </div>
     </div>
   </header>
 
@@ -125,7 +130,7 @@
         </div>
         <div class="product-price">1440Da</div>
       </div>
-      <div class="product-cta">Add To Cart</div>
+      <div id="product-cta" class="product-cta cta">Add To Cart</div>
     </div>
   </section>
 
@@ -261,7 +266,7 @@
         <textarea class="contact-field-input contact-field-textarea" name="message" id="message"
           placeholder="Hello i would like to..." required rows="10"></textarea>
       </div>
-      <input class="contact-form-submit" type="submit" value="Envoyer" />
+      <input class="contact-form-submit cta" type="submit" value="Envoyer" />
     </form>
 
     <div class="contact-other">
@@ -272,15 +277,15 @@
         <div class="contact-other-content-left">
           <div class="contact-other-content-socialmedia">
             <img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon" />
-            <div>Instagram</div>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
           </div>
           <div class="contact-other-content-socialmedia">
             <img src="./assets/icons/Solid/Brands/Tumblr.svg" alt="twitter-icon" />
-            <div>Twitter</div>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
           </div>
           <div class="contact-other-content-socialmedia">
             <img src="./assets/icons/Solid/Brands/Facebook.svg" alt="facebook-icon" />
-            <div>Facebook</div>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
           </div>
         </div>
 
@@ -289,15 +294,15 @@
         <div class="contact-other-content-right">
           <div class="contact-other-content-socialmedia">
             <img src="./assets/icons/Solid/Communication/Phone.svg" alt="phone-icon" />
-            <div>0553970454</div>
+            <a href="#">0553970454</a>
           </div>
           <div class="contact-other-content-socialmedia">
             <img src="./assets/icons/Solid/Communication/Envelope.svg" alt="mail-icon" />
-            <div>contact@citrulox.com</div>
+            <a href="#">contact@citrulox.com</a>
           </div>
           <div class="contact-other-content-socialmedia">
             <img src="./assets/icons/Solid/Navigation/Location.svg" alt="map-point-icon" />
-            <div>Map Point</div>
+            <a href="#">Map Point</a>
           </div>
         </div>
 
