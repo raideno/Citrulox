@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-main: #fd3235;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #c2c9d1;
+}
+
+body {
+  background-color: var(--color-main);
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 0;
+  padding-right: 0;
+
+  gap: 64px;
+}
+
+.text-red {
+  color: var(--color-main);
+}
+
+.section-header {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-header-subtitle {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--color-main);
+}
+
+.section-header-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: var(--color-black);
+}
+
+.contact-form-submit {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+
+  background: var(--color-main);
+  border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--color-white);
+}
+
+.contact-other {
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.contact-other-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  /* Black */
+
+  color: var(--color-black);
+}
+
+.contact-other-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-other-content-left,
+.contact-other-content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+
+.contact-other-content-bar {
+  width: 4px;
+  height: 136px;
+
+  background: var(--color-main);
+  border-radius: 4px;
+}
+
+.contact-other-content-socialmedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(var(--color-black));
+}

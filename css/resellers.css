@@ -1,0 +1,83 @@
+#resellers {
+}
+
+.reventes-header-subtitle,
+.reventes-header-title {
+  color: var(--color-white);
+}
+
+.resellers-content {
+  width: 100%;
+  padding: 0 24px;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.resellers-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resellers-header-left {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resellers-header-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--color-white);
+}
+
+.resellers-header-arrow,
+.resellers-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resellers-header-wilaya {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: var(--color-white);
+}
+
+.resellers-header-right {
+}
+
+.resellers-map {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+
+  background: var(--color-white);
+  border-radius: 4px;
+}
+
+.resellers-list {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/*TODO: why icons aren't being colored ?*/
+.reseller {
+  gap: 4px;
+  display: flex;
+  color: var(--color-white);
+  fill: var(--color-white);
+}

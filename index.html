@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citrulox</title>
+
+  <!--javascript-->
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/notifications.css" />
+
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/products.css" />
+  <link rel="stylesheet" href="./css/reviews.css" />
+  <link rel="stylesheet" href="./css/resellers.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <!--css-->
+  <script src="./js/main.js" defer type="module"></script>
+</head>
+
+<body>
+  <div id="notifications">
+    <div class="notification">Notification !</div>
+  </div>
+
+  <div id="hamburger-menu" class="hamburger-menu">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#resellers">Resellers</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <header>
+    <div class="header-left">
+      <img id="hamburger-icon" src="./assets/icons/Solid/Interface/Menu.svg" alt="hamburger-icon" />
+      <nav class="nav-links">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#products">Products</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#resellers">Resellers</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="header-title">Citrulox</div>
+    <div class="header-right">
+      <img src="./assets/icons/Solid/General/Moon.svg" alt="moon-icon" />
+      <img src="./assets/icons/Solid/General/Shopping-cart.svg" alt="shopping-cart-icon" />
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="home-hero">
+      Get nutty with our delicious
+      <span class="text-red">Peanut Butter</span> &
+      <span class="text-red">Granolas</span>
+    </div>
+    <!--Maybe we should show the benefits and not the features-->
+    <div class="hero-features">
+      <div class="hero-bar"></div>
+      <ul class="hero-features-list">
+        <li class="hero-feature">
+          <img class="hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg" alt="checked-icon" />
+          <div class="hero-feature-text">100% Natural</div>
+        </li>
+        <li class="hero-feature">
+          <img class="hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg" alt="checked-icon" />
+          <div class="hero-feature-text">High Quality</div>
+        </li>
+        <li class="hero-feature">
+          <img class="hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg" alt="checked-icon" />
+          <div class="hero-feature-text">No Sugar, No Salt & No Palm Oil</div>
+        </li>
+      </ul>
+    </div>
+
+    <img class="butter-spread-image" src="./assets/peanut-butter-spread.png" alt="peanut-butter-spread-image"
+      width="100%">
+  </section>
+
+  <section id="products">
+    <div class="section-header">
+      <div class="section-header-subtitle">Nos Produits</div>
+      <div class="section-header-title">Une varieté de Produits</div>
+    </div>
+
+    <div id="products-categories" class="products-categories">
+      <!--
+        <div class="products-category products-category-active">
+          Peanut Butter
+        </div>
+        <div class="products-category">Granolas</div>
+        <div class="products-category">Proteins</div>
+        <div class="products-category">Avoine</div>
+      -->
+    </div>
+
+    <div class="products-list">
+      <img class="product" src="./assets/peanut-butter-brown.png" alt="peanut-butter-brown" />
+      <img class="product" src="./assets/peanut-butter-orange.png" alt="peanut-butter-orange" />
+      <img class="product" src="./assets/peanut-butter-red.png" alt="peanut-butter-red" />
+      <img class="product" src="./assets/peanut-butter-brown.png" alt="peanut-butter-brown" />
+      <img class="product" src="./assets/peanut-butter-orange.png" alt="peanut-butter-orange" />
+    </div>
+
+    <div class="product-description">
+      <div class="product-description-texts">
+        <div class="product-subtitle">Origianl Taste</div>
+        <div class="product-title">Red Peanut Butter</div>
+      </div>
+      <div class="product-informations">
+        <div class="product-quantity">
+          <div class="product-quantity-remove" id="product-quantity-remove">
+            -
+          </div>
+          <div class="product-quantity-value" id="product-quantity-value">1</div>
+          <div class="product-quantity-add" id="product-quantity-add">+</div>
+        </div>
+        <div class="product-price">1440Da</div>
+      </div>
+      <div class="product-cta">Add To Cart</div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="section-header">
+      <div class="section-header-subtitle">Des Avis</div>
+      <div class="section-header-title">Ils nous ont fait Confiance</div>
+    </div>
+
+    <div id="reviews-list" class="reviews-list">
+      <!--
+
+        <div class="review">
+          <div class="review-header">
+            <div class="review-header-left">
+              <div class="review-avatar">
+                <img src="https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg" width="100%" height="100%"
+                alt="review-avatar">
+              </div>
+              <div class="review-details">
+                <div class="review-stars">
+                  <img class="review-star" src="./assets/icons/Solid/Status/Star.svg" alt="star">
+                  <img class="review-star" src="./assets/icons/Solid/Status/Star.svg" alt="star">
+                  <img class="review-star" src="./assets/icons/Solid/Status/Star.svg" alt="star">
+                  <img class="review-star" src="./assets/icons/Solid/Status/Star.svg" alt="star">
+                  <img class="review-star" src="./assets/icons/Solid/Status/Star-half.svg" alt="half-star">
+                </div>
+                <div class="review-author">Mahmoud</div>
+              </div>
+            </div>
+            <div class="review-header-right">10 Avril 2022</div>
+          </div>
+          <div class="review-content">Très calorique : Il est important de noter que le beurre de cacahuète est très
+            calorique, donc il doit être consommé avec modération si vous essayez de surveiller votre apport calorique. Il
+            est également important de choisir un beurre de cacahuète naturel sans additifs tels que l'huile de palme et
+            le sucre ajouté.</div>
+          </div>
+        -->
+    </div>
+
+    <div id="reviews-pages-dots" class="reviews-pages-dots">
+      <!--
+        <div class="reviews-pages-dot"></div>
+        <div class="reviews-pages-dot"></div>
+        <div class="reviews-pages-dot"></div>
+      -->
+    </div>
+  </section>
+
+  <section id="resellers">
+    <div class="section-header">
+      <div class="section-header-subtitle reventes-header-subtitle">
+        Points de Reventes
+      </div>
+      <div class="section-header-title reventes-header-title">
+        Magasins Physiques
+      </div>
+    </div>
+
+    <div class="resellers-content">
+      <div class="resellers-header">
+        <div class="resellers-header-left">
+          <div class="resellers-header-arrow">
+            <img src="./assets/icons/Solid/Interface/Arrow right.svg" alt="arrow-right-icon">
+          </div>
+          <div class="resellers-header-text">Chosir Wilaya</div>
+          <div class="resellers-header-wilaya">Oran</div>
+        </div>
+        <div class="resellers-header-right">
+          <img src="./assets/icons/Solid/Status/Info-rect.svg" alt="help-icon">
+        </div>
+      </div>
+
+      <div class="resellers-map">
+        <iframe width="100%" height="100%" id="gmap_canvas"
+          src="https://maps.google.com/maps?q=oran&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes"
+          marginheight="0" marginwidth="0"></iframe>
+      </div>
+
+      <div class="resellers-list">
+        <div class="reseller">
+          <div><img src="./assets/icons/Solid/Navigation/Location.svg" alt="location-icon"></div>
+          <div>Centre Commercial Oran</div>
+          <div>•</div>
+          <div><img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon"></div>
+          <div>@Azj</div>
+        </div>
+
+        <div class="reseller">
+          <div><img src="./assets/icons/Solid/Navigation/Location.svg" alt="location-icon"></div>
+          <div>Centre Commercial Oran</div>
+          <div>•</div>
+          <div><img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon"></div>
+          <div>@Azj</div>
+        </div>
+
+        <div class="reseller">
+          <div><img src="./assets/icons/Solid/Navigation/Location.svg" alt="location-icon"></div>
+          <div>Centre Commercial Oran</div>
+          <div>•</div>
+          <div><img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon"></div>
+          <div>@Azj</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-header">
+      <div class="section-header-subtitle">Contact</div>
+      <div class="section-header-title">Parlez Nous</div>
+    </div>
+
+    <form class="contact-form">
+      <div class="contact-field">
+        <label class="contact-field-label" for="nom-prenom">Nom & Prenom</label>
+        <input class="contact-field-input" type="text" name="nom-prenom" id="nom-prenom" placeholder="John Doe"
+          required />
+      </div>
+      <div class="contact-field">
+        <label class="contact-field-label" for="email">Email</label>
+        <input class="contact-field-input" type="email" name="email" id="email" placeholder="example@mail.com"
+          required />
+      </div>
+      <div class="contact-field">
+        <label class="contact-field-label" for="subject">Subject</label>
+        <input class="contact-field-input" type="text" name="subject" id="subject" placeholder="Request For.."
+          required />
+      </div>
+      <div class="contact-field">
+        <label class="contact-field-label" for="message">Message</label>
+        <textarea class="contact-field-input contact-field-textarea" name="message" id="message"
+          placeholder="Hello i would like to..." required rows="10"></textarea>
+      </div>
+      <input class="contact-form-submit" type="submit" value="Envoyer" />
+    </form>
+
+    <div class="contact-other">
+      <div class="contact-other-title">Retrouvez nous aussi sur</div>
+
+      <div class="contact-other-content">
+
+        <div class="contact-other-content-left">
+          <div class="contact-other-content-socialmedia">
+            <img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon" />
+            <div>Instagram</div>
+          </div>
+          <div class="contact-other-content-socialmedia">
+            <img src="./assets/icons/Solid/Brands/Tumblr.svg" alt="twitter-icon" />
+            <div>Twitter</div>
+          </div>
+          <div class="contact-other-content-socialmedia">
+            <img src="./assets/icons/Solid/Brands/Facebook.svg" alt="facebook-icon" />
+            <div>Facebook</div>
+          </div>
+        </div>
+
+        <div class="contact-other-content-bar"></div>
+
+        <div class="contact-other-content-right">
+          <div class="contact-other-content-socialmedia">
+            <img src="./assets/icons/Solid/Communication/Phone.svg" alt="phone-icon" />
+            <div>0553970454</div>
+          </div>
+          <div class="contact-other-content-socialmedia">
+            <img src="./assets/icons/Solid/Communication/Envelope.svg" alt="mail-icon" />
+            <div>contact@citrulox.com</div>
+          </div>
+          <div class="contact-other-content-socialmedia">
+            <img src="./assets/icons/Solid/Navigation/Location.svg" alt="map-point-icon" />
+            <div>Map Point</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-bar"></div>
+      <div class="footer-title">Citrulox</div>
+      <div class="footer-bar"></div>
+    </div>
+    <div class="footer-copyright">Copyright © 2023 Citrulox</div>
+  </footer>
+</body>
+
+</html>

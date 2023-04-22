@@ -1,0 +1,129 @@
+#products {
+  background-color: var(--color-white);
+}
+
+.products-categories {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.products-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+
+  border-bottom: 4px solid var(--color-gray);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  white-space: nowrap;
+
+  color: var(--color-gray);
+}
+
+.products-category-active {
+  border-bottom: 4px solid var(--color-main);
+  color: var(--color-main);
+}
+
+.products-list {
+  width: 100vw;
+
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product {
+}
+
+.product-description {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-description-texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product-subtitle {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--color-black);
+}
+
+.product-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: var(--color-black);
+}
+
+.product-informations {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-quantity {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-quantity-remove,
+.product-quantity-value,
+.product-quantity-add {
+  color: var(--color-main);
+  fill: var(--color-main);
+}
+
+.product-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: var(--color-gray);
+}
+
+.product-cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+
+  background: var(--color-main);
+  border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: var(--color-white);
+}
