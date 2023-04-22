@@ -104,8 +104,6 @@ header {
   align-items: flex-start;
   padding: 0px 0px 4px;
 
-  /*border-bottom: 2px solid var(--color-black);*/
-
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -116,12 +114,21 @@ header {
   color: var(--color-black);
 }
 
+.nav-link-active {
+  color: var(--color-main);
+  border-bottom: 2px solid var(--color-main);
+}
+
 #hamburger-icon {
   display: block;
 }
 
 .nav-links {
   display: none;
+}
+
+#theme {
+  cursor: pointer;
 }
 
 @media (min-width: 950px) {
