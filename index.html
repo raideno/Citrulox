@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/notifications.css" />
+  <link rel="stylesheet" href="./css/modal.css" />
 
   <link rel="stylesheet" href="./css/home.css" />
   <link rel="stylesheet" href="./css/products.css" />
@@ -26,6 +27,12 @@
 </head>
 
 <body>
+  <div id="modals">
+    <div class="modal">
+      Hello am a modal
+    </div>
+  </div>
+
   <div id="notifications">
     <!--
       <div class="notification">Notification !</div>
@@ -42,7 +49,7 @@
 
   <header>
     <div class="header-left">
-      <img id="hamburger-icon" src="./assets/icons/Solid/Interface/Menu.svg" alt="hamburger-icon" />
+      <img class="icon-temp" id="hamburger-icon" src="./assets/icons/Solid/Interface/Menu.svg" alt="hamburger-icon" />
       <nav id="nav-links" class="nav-links">
         <a class="nav-link" href="#home">Home</a>
         <a class="nav-link" href="#products">Products</a>
@@ -53,10 +60,11 @@
     </div>
     <div class="header-title">Citrulox</div>
     <div class="header-right">
-      <img id="theme" src="./assets/icons/Solid/General/Moon.svg" alt="moon-icon" />
+      <img class="icon-temp" id="theme" src="./assets/icons/Solid/General/Moon.svg" alt="moon-icon" />
       <div class="cart" id="cart">
         <div id="cart-value" class="cart-value"></div>
-        <img id="cart-icon" src="./assets/icons/Solid/General/Shopping-cart.svg" alt="shopping-cart-icon" />
+        <img class="icon-temp" id="cart-icon" src="./assets/icons/Solid/General/Shopping-cart.svg"
+          alt="shopping-cart-icon" />
       </div>
     </div>
   </header>
@@ -72,15 +80,18 @@
       <div class="hero-bar"></div>
       <ul class="hero-features-list">
         <li class="hero-feature">
-          <img class="hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg" alt="checked-icon" />
+          <img class="icon-temp hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg"
+            alt="checked-icon" />
           <div class="hero-feature-text">100% Natural</div>
         </li>
         <li class="hero-feature">
-          <img class="hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg" alt="checked-icon" />
+          <img class="icon-temp hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg"
+            alt="checked-icon" />
           <div class="hero-feature-text">High Quality</div>
         </li>
         <li class="hero-feature">
-          <img class="hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg" alt="checked-icon" />
+          <img class="icon-temp hero-feature-icon" src="./assets/icons/Solid/Status/Checked-box.svg"
+            alt="checked-icon" />
           <div class="hero-feature-text">No Sugar, No Salt & No Palm Oil</div>
         </li>
       </ul>
@@ -107,18 +118,20 @@
       -->
     </div>
 
-    <div class="products-list">
-      <img class="product" src="./assets/peanut-butter-brown.png" alt="peanut-butter-brown" />
-      <img class="product" src="./assets/peanut-butter-orange.png" alt="peanut-butter-orange" />
-      <img class="product" src="./assets/peanut-butter-red.png" alt="peanut-butter-red" />
-      <img class="product" src="./assets/peanut-butter-brown.png" alt="peanut-butter-brown" />
-      <img class="product" src="./assets/peanut-butter-orange.png" alt="peanut-butter-orange" />
+    <div id="products-list" class="products-list">
+      <!--
+        <img class="product" src="./assets/peanut-butter-brown.png" alt="peanut-butter-brown" />
+        <img class="product" src="./assets/peanut-butter-orange.png" alt="peanut-butter-orange" />
+        <img class="product" src="./assets/peanut-butter-red.png" alt="peanut-butter-red" />
+        <img class="product" src="./assets/peanut-butter-brown.png" alt="peanut-butter-brown" />
+        <img class="product" src="./assets/peanut-butter-orange.png" alt="peanut-butter-orange" />
+      -->
     </div>
 
     <div class="product-description">
       <div class="product-description-texts">
-        <div class="product-subtitle">Origianl Taste</div>
-        <div class="product-title">Red Peanut Butter</div>
+        <div id="product-subtitle" class="product-subtitle"><!--Origianl Taste--></div>
+        <div id="product-title" class="product-title"><!--Red Peanut Butter--></div>
       </div>
       <div class="product-informations">
         <div class="product-quantity">
@@ -128,7 +141,7 @@
           <div class="product-quantity-value" id="product-quantity-value">1</div>
           <div class="product-quantity-add" id="product-quantity-add">+</div>
         </div>
-        <div class="product-price">1440Da</div>
+        <div id="product-price" class="product-price"><!--1440Da--></div>
       </div>
       <div id="product-cta" class="product-cta cta">Add To Cart</div>
     </div>
@@ -194,13 +207,19 @@
       <div class="resellers-header">
         <div class="resellers-header-left">
           <div class="resellers-header-arrow">
-            <img src="./assets/icons/Solid/Interface/Arrow right.svg" alt="arrow-right-icon">
+            <img class="icon-temp" src="./assets/icons/Solid/Interface/Arrow right.svg" alt="arrow-right-icon">
           </div>
           <div class="resellers-header-text">Chosir Wilaya</div>
-          <div class="resellers-header-wilaya">Oran</div>
+          <div class="resellers-header-wilaya">
+            <select id="resellers-header-wilaya-select">
+              <option value="oran" selected disabled>Choisissez Une Wilaya</option>
+              <option value="oran">Oran</option>
+              <option value="alger">Alger</option>
+            </select>
+          </div>
         </div>
         <div class="resellers-header-right">
-          <img src="./assets/icons/Solid/Status/Info-rect.svg" alt="help-icon">
+          <img class="icon-temp" src="./assets/icons/Solid/Status/Info-rect.svg" alt="help-icon">
         </div>
       </div>
 
@@ -210,37 +229,31 @@
           marginheight="0" marginwidth="0"></iframe>
       </div>
 
-      <div class="resellers-list">
+      <div class="resellers-list" id="resellers-list">
+        <!--
         <div class="reseller">
-          <div><img src="./assets/icons/Solid/Navigation/Location.svg" alt="location-icon"></div>
-          <div>Centre Commercial Oran</div>
-          <div>•</div>
-          <div><img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon"></div>
-          <div>@Azj</div>
+          <div class="reseller-left">
+            <div><img class="icon-temp" src="./assets/icons/Solid/Navigation/Location.svg" alt="location-icon"></div>
+            <div>${localisation}</div>
+          </div>
+          <div class="reseller-right">
+            <div><img class="icon-temp" src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon"></div>
+            <div>${instagram}</div>
+          </div>
         </div>
-
-        <div class="reseller">
-          <div><img src="./assets/icons/Solid/Navigation/Location.svg" alt="location-icon"></div>
-          <div>Centre Commercial Oran</div>
-          <div>•</div>
-          <div><img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon"></div>
-          <div>@Azj</div>
-        </div>
-
-        <div class="reseller">
-          <div><img src="./assets/icons/Solid/Navigation/Location.svg" alt="location-icon"></div>
-          <div>Centre Commercial Oran</div>
-          <div>•</div>
-          <div><img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon"></div>
-          <div>@Azj</div>
-        </div>
-
+        -->
       </div>
+
+      <div class="resellers-ask">
+        Si vous souhaitez devenir revendeur affilié, <span><a href="#contact">contacter nous par mail</a></span> ou bien
+        par téléphone
+      </div>
+
     </div>
   </section>
 
   <section id="contact">
-    <div class="section-header">
+    <div class="section-header contact-header">
       <div class="section-header-subtitle">Contact</div>
       <div class="section-header-title">Parlez Nous</div>
     </div>
@@ -251,14 +264,30 @@
         <input class="contact-field-input" type="text" name="nom-prenom" id="nom-prenom" placeholder="John Doe"
           required />
       </div>
-      <div class="contact-field">
-        <label class="contact-field-label" for="email">Email</label>
-        <input class="contact-field-input" type="email" name="email" id="email" placeholder="example@mail.com"
-          required />
-      </div>
+      <!--Make it a writable select field-->
+      <!--
       <div class="contact-field">
         <label class="contact-field-label" for="subject">Subject</label>
         <input class="contact-field-input" type="text" name="subject" id="subject" placeholder="Request For.."
+          required />
+      </div>
+      -->
+
+      <div class="contact-field">
+        <label class="contact-field-label" for="subject">Subject</label>
+        <select class="contact-field-input" required>
+          <option disabled selected>Selectionnez un Sujet</option>
+          <option>Reseignement sur un Produit</option>
+          <option>Devenir Revendeur Affilié</option>
+          <option>Ask for Refund</option>
+          <option>Fiche Technique d'un Produit</option>
+          <option>Autre</option>
+        </select>
+      </div>
+
+      <div class="contact-field">
+        <label class="contact-field-label" for="email">Email</label>
+        <input class="contact-field-input" type="email" name="email" id="email" placeholder="example@mail.com"
           required />
       </div>
       <div class="contact-field">
@@ -276,15 +305,15 @@
 
         <div class="contact-other-content-left">
           <div class="contact-other-content-socialmedia">
-            <img src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon" />
+            <img class="icon-temp" src="./assets/icons/Solid/Brands/Instagram.svg" alt="instagram-icon" />
             <a href="https://instagram.com" target="_blank">Instagram</a>
           </div>
           <div class="contact-other-content-socialmedia">
-            <img src="./assets/icons/Solid/Brands/Tumblr.svg" alt="twitter-icon" />
+            <img class="icon-temp" src="./assets/icons/Solid/Brands/Tumblr.svg" alt="twitter-icon" />
             <a href="https://twitter.com" target="_blank">Twitter</a>
           </div>
           <div class="contact-other-content-socialmedia">
-            <img src="./assets/icons/Solid/Brands/Facebook.svg" alt="facebook-icon" />
+            <img class="icon-temp" src="./assets/icons/Solid/Brands/Facebook.svg" alt="facebook-icon" />
             <a href="https://facebook.com" target="_blank">Facebook</a>
           </div>
         </div>
@@ -293,15 +322,15 @@
 
         <div class="contact-other-content-right">
           <div class="contact-other-content-socialmedia">
-            <img src="./assets/icons/Solid/Communication/Phone.svg" alt="phone-icon" />
+            <img class="icon-temp" src="./assets/icons/Solid/Communication/Phone.svg" alt="phone-icon" />
             <a href="#">0553970454</a>
           </div>
           <div class="contact-other-content-socialmedia">
-            <img src="./assets/icons/Solid/Communication/Envelope.svg" alt="mail-icon" />
+            <img class="icon-temp" src="./assets/icons/Solid/Communication/Envelope.svg" alt="mail-icon" />
             <a href="#">contact@citrulox.com</a>
           </div>
           <div class="contact-other-content-socialmedia">
-            <img src="./assets/icons/Solid/Navigation/Location.svg" alt="map-point-icon" />
+            <img class="icon-temp" src="./assets/icons/Solid/Navigation/Location.svg" alt="map-point-icon" />
             <a href="#">Map Point</a>
           </div>
         </div>

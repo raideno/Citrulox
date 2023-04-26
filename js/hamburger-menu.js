@@ -7,14 +7,13 @@ hamburgerIcon.addEventListener("click", () => {
     menuState = !menuState;
 
     if (menuState)
-        hamburgerMenu.style.display = "flex"
-    else {
-        hamburgerMenu.style.display = "none";
-    }
+        hamburgerMenu.animate([{ top: 0 }], { duration: 150, fill: "forwards" });
+    else
+        hamburgerMenu.animate([{ top: "-100vh" }], { duration: 150, fill: "forwards" });
 });
 
 hamburgerMenu.addEventListener("click", () => {
-    hamburgerMenu.style.display = "none";
+    hamburgerMenu.animate([{ top: "-100vh" }], { duration: 150, fill: "forwards" });
 });
 
 export default "hamburger-menu";

@@ -8,19 +8,61 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   list-style-type: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
+  /*colors*/
   --color-main: #fd3235;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-gray: #c2c9d1;
+  /*breakpoints*/
+  --break-point-1: 700px;
+  --break-point-2: 1450px;
 }
 
 body {
   background-color: var(--color-main);
-  scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+  background-color: var(--color-gray);
+  width: 10px;
+  opacity: 0.75;
+}
+
+/*
+body::-webkit-scrollbar:hover {
+  background-color: green;
+}
+*/
+
+body::-webkit-scrollbar-button {
+  background-color: var(--color-gray);
+}
+
+/*
+body::-webkit-scrollbar-corner {
+  background-color: yellow;
+}
+*/
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-main);
+}
+
+/*
+body::-webkit-scrollbar-track {
+  background-color: aqua;
+}
+*/
+/*
+body::-webkit-scrollbar-track-piece {
+  background-color: var(--color-main);
+  opacity: 0.5;
+}
+*/
 
 section {
   width: 100%;
@@ -79,4 +121,9 @@ section {
 
 .cta:active {
   transform: scale(0.95);
+}
+
+.icon-white,
+.svg-white {
+  filter: invert(100%);
 }

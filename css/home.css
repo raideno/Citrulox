@@ -89,6 +89,9 @@
   .home-hero {
     grid-area: m;
     align-self: center;
+
+    font-size: 58px;
+    line-height: 125%;
   }
 
   .hero-features {

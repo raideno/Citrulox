@@ -1,11 +1,28 @@
 #contact {
   background-color: var(--color-white);
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+    "section-header"
+    "contact-form"
+    "contact-infos";
+}
+
+/*remove class and replace with #contact:first-child*/
+.contact-header {
+  grid-area: section-header;
 }
 
 .contact-form {
-  width: 100%;
+  grid-area: contact-form;
 
-  padding: 0 24px;
+  width: 100%;
 
   gap: 1rem;
   display: flex;
@@ -76,13 +93,15 @@
 }
 
 .contact-other {
+  grid-area: contact-infos;
+
   width: 100%;
+
   gap: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 0 24px;
 }
 
 .contact-other-title {
@@ -137,4 +156,13 @@
   line-height: 19px;
 
   color: var(--color-black);
+}
+
+@media (min-width: 700px) {
+  #contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "section-header section-header"
+      "contact-form contact-infos";
+  }
 }
